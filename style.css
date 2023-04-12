@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  /* background-color: aquamarine; */
+  background-image: url("images/pozadina1.png");
+  background-repeat: repeat;
+  background-size: cover;
+  /* background-color: #ccc; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #1973be;
+  height: 70px;
+  width: 100%;
+}
+
+.logo {
+  height: 60px;
+}
+
+.space {
+  height: 50px;
+}
+
+/* GAME CONSOLE */
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.console {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #1973be;
+  padding: 50px 10px;
+  border-radius: 75px;
+  border: 0.5px solid #000;
+  margin-bottom: 20px;
+}
+
+.screen {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: black;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+#board {
+  border: #fff solid 1px;
+}
+
+.tekst {
+  margin: 5px;
+  padding: 0;
+}
+
+.console-btns {
+  width: 180px;
+  height: auto;
+  /* background-color: aqua; */
+}
+
+.btn {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #191f2b;
+  background-color: #faa519;
+  border: 0.5px solid #000;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+/*.btn i{*/
+/*  background-color: #191f2b;*/
+/*  height: 14px;*/
+/*  z-index: 999;*/
+/*}*/
+
+.btn-nista {
+  width: 50px;
+  /* height: 40px; */
+  background-color: #faa519;
+  border: none;
+  border-radius: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+/* CONTAINERS */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ffffff60;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 350px;
+  height: 300px;
+
+  position: absolute;
+  z-index: 999;
+}
+
+/* BUTTONS */
+.button {
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #191f2b;
+  background-color: #faa519;
+  border: 0.5px solid #000;
+  border-radius: 5px;
+  width: 130px;
+  height: 40px;
+  transition: 0.7s ease;
+}
+.button:hover {
+  background-color: #191f2b;
+  color: #fff;
+}
+
+.inpt {
+  font-size: 13px;
+  width: 175px;
+  height: 20px;
+}
+
+/* SCOREBOARD */
+.cont-tabela {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff60;
+  width: 500px;
+  height: 500px;
+  margin-top: 5%;
+
+  position: absolute;
+  z-index: 999;
+}
+
+.tabela th {
+  color: #faa519;
+}
+
+.tabela tr {
+  height: 30px;
+}
+
+.tbl-rang {
+  width: 80px;
+  text-align: center;
+  border-bottom: solid 1px #faa519;
+}
+
+.tbl-name {
+  width: 250px;
+  padding: 0 10px;
+  border-bottom: solid 1px #faa519;
+}
+
+.tbl-score {
+  width: 100px;
+  text-align: center;
+  border-bottom: solid 1px #faa519;
+}
+
+/* HIDE */
+.hide {
+  display: none;
+}
+
+/* DUGMICI NA KOMPU */
+/* @media only screen and (min-width: 800px) {
+  .console-btns {
+    display: none;
+  }
+} */
+
+@media only screen and (max-width: 850px) {
+  /* apply this style for tablet screens */
+  .console {
+    flex-direction: column;
+    padding: 10px 50px;
+  }
+  .screen {
+    margin: 20px;
+  }
+
+  .button {
+    margin: 2px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .console {
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .console {
+    padding: 10px 1px;
+  }
+
+  .screen {
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .container {
+    width: 300px;
+    height: 250px;
+  }
+
+  .cont-tabela {
+    font-size: 16px;
+    width: 300px;
+  }
+
+  .tabela tr {
+    height: 22px;
+  }
+
+  .tbl-rang {
+    width: 50px;
+  }
+
+  .tbl-name {
+    width: 200px;
+  }
+
+  .tbl-score {
+    width: 75px;
+  }
+
+  .header {
+    height: 55px;
+    font-size: small;
+  }
+  .logo {
+    height: 45px;
+  }
+
+  .btn-logout {
+    width: 90px;
+    height: 30px;
+    font-size: 13px;
+  }
+}
+
+.tekst {
+  font-size: small;
+}

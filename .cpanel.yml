@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/bestrs/repositories
+    - export DEPLOYPATH=/home/bestrs/new.bets.rs
     - /bin/cp -r * $DEPLOYPATH

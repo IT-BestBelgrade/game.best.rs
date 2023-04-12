@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/bestrs/repositories/game.best.rs
-    - /bin/cp * $DEPLOYPATH
+    - export DEPLOYPATH=/home/bestrs/public_html/game.best.rs
+    - /bin/cp -r * $DEPLOYPATH
